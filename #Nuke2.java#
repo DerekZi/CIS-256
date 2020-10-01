@@ -1,0 +1,13 @@
+//what needs to pay attention to is that String in java is immutable
+
+public class Nuke2{
+    public static void main(String[] args){
+        String readin;
+        String printOut;
+        java.util.Scanner input = new java.util.Scanner(System.in);
+        readin = input.next();
+        printOut = readin.substring(0,1) + readin.substring(2);
+        System.out.println(printOut);
+        input.close();
+    
+}

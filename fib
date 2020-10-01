@@ -1,0 +1,11 @@
+public static int fib2(int n, int k, int f0, int f1){
+    if(n==k){
+        return f0;
+    }else{
+        return fib2(n,k+1,f1,f0+f1);
+    }
+}
+I think that n indicates the nth Fibonacci number we want to get. k indicates the starting position of counting. 
+f0 indicates the Fibonacci number of the starting point. f1 indicates the Fibonacci number of index k+1.
+For example, fib2(3,1,1,1) indicates that starts from index 1. This function enables us to choose the starting point. 
+This reduces the times the function is recursively called.
