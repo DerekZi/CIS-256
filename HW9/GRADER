@@ -1,0 +1,6 @@
+Part II
+First, we need to mark all walls to be true. Then, choose a random starting cell, visit the cell, and mark it visited.
+Then, we use a loop to go through those walls which are still true and those cells that are still unvisited.
+
+(a) After visting a cell and marking it, we can make sure that there is no cycle. This ensures there is no more than one path between any pair of cells.
+(b) Because we randomly choose a starting cell and a direction that the Depth-First Search goes through, the algorithm uses random numbers to generate a different maze

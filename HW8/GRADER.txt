@@ -1,0 +1,26 @@
+GRADER file for Homework 8
+
+Your Name:  
+Dadian Zhu
+ 
+
+Part III.  Running time comparisons
+
+  List size         mergesort             quicksort
+      100            1 msec                 1 msec
+    1,000            5 msec                 10 msec
+   10,000            33 msec                52 msec
+  100,000            241 msec               182 msec
+1,000,000            2391 msec              1540 msec
+
+Part IV.
+
+  Is mergesort stable?  
+  No
+  Why or why not?
+  Because when items' keys are equal, mergesort enqueues items in q1 first, but not enqueues items in q1 and q2 at the same time, it is not stable.
+
+  Is quicksort stable? 
+  Yes 
+  Why or why not?
+  Because when items' keys are equal, quicksort enqueues items in q1 and q2 at the same time, it is stable
